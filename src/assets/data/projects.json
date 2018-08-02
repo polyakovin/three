@@ -10,5 +10,9 @@
   {
     "name": "Drag & Drop",
     "component": "drag-n-drop"
+  },
+  {
+    "name": "Magnitude Computer",
+    "component": "magnitude-computer"
   }
 ]

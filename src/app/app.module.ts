@@ -10,11 +10,19 @@ import { fab } from '@fortawesome/free-brands-svg-icons';
 
 import { MainComponent } from './main/main.component';
 import { AppComponent } from './app.component';
-import { HttpService } from './http.service';
 import { TheRedCubeComponent } from './the-red-cube/the-red-cube.component';
 import { DifferentPrimitivesComponent } from './different-primitives/different-primitives.component';
 import { SimpleProjectTemplateComponent } from './simple-project-template/simple-project-template.component';
 import { DragNDropComponent } from './drag-n-drop/drag-n-drop.component';
+
+import { MagnitudeComputerComponent } from './magnitude-computer/magnitude-computer.component';
+import { HelpersService } from './magnitude-computer/helpers.service';
+import { SettingsService } from './magnitude-computer/settings.service';
+import { SceneService } from './magnitude-computer/scene.service';
+import { MathService } from './magnitude-computer/math.service';
+import { ModelsService } from './magnitude-computer/models.service';
+
+import { HttpService } from './http.service';
 
 mergeAllIconsToOneObject();
 
@@ -25,7 +33,8 @@ mergeAllIconsToOneObject();
     TheRedCubeComponent,
     DifferentPrimitivesComponent,
     SimpleProjectTemplateComponent,
-    DragNDropComponent
+    DragNDropComponent,
+    MagnitudeComputerComponent
   ],
   imports: [
     BrowserModule,
@@ -34,7 +43,14 @@ mergeAllIconsToOneObject();
     AppRouterModule,
     FontAwesomeModule
   ],
-  providers: [ HttpService ],
+  providers: [
+    HttpService,
+    HelpersService,
+    MathService,
+    ModelsService,
+    SceneService,
+    SettingsService
+  ],
   bootstrap: [ AppComponent ]
 })
 export class AppModule { }

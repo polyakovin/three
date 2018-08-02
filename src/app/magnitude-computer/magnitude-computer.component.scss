@@ -1,0 +1,27 @@
+.scene {
+  position: relative;
+
+  #plot {
+    // width: 540px;
+    width: 450px;
+    height: 500px;
+
+    &.wide-plot {
+      width: 1000px;
+    }
+  }
+
+  #scene {
+    display: inline-block;
+
+    &.on-plot {
+      position: absolute;
+      // left: 358px;
+      // top: 184px;
+      left: 365px;
+      top: 175px;
+      z-index: 1;
+      transform: scaleX(-1);
+    }
+  }
+}
