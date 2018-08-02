@@ -1,9 +1,11 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from "@angular/router";
 import { MainComponent } from "./main/main.component";
+import { TheRedCubeComponent } from "./the-red-cube/the-red-cube.component";
 
 const APP_ROUTES: Routes = [
   { path: '', component: MainComponent },
+  { path: 'the-red-cube', component: TheRedCubeComponent },
   { path: '**', redirectTo: '/', pathMatch: 'full' }
 ];
 

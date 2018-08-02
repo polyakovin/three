@@ -11,13 +11,15 @@ import { fab } from '@fortawesome/free-brands-svg-icons';
 import { MainComponent } from './main/main.component';
 import { AppComponent } from './app.component';
 import { HttpService } from './http.service';
+import { TheRedCubeComponent } from './the-red-cube/the-red-cube.component';
 
 mergeAllIconsToOneObject();
 
 @NgModule({
   declarations: [
     AppComponent,
-    MainComponent
+    MainComponent,
+    TheRedCubeComponent
   ],
   imports: [
     BrowserModule,
