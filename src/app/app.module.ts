@@ -12,6 +12,8 @@ import { MainComponent } from './main/main.component';
 import { AppComponent } from './app.component';
 import { HttpService } from './http.service';
 import { TheRedCubeComponent } from './the-red-cube/the-red-cube.component';
+import { DifferentPrimitivesComponent } from './different-primitives/different-primitives.component';
+import { SimpleProjectTemplateComponent } from './simple-project-template/simple-project-template.component';
 
 mergeAllIconsToOneObject();
 
@@ -19,7 +21,9 @@ mergeAllIconsToOneObject();
   declarations: [
     AppComponent,
     MainComponent,
-    TheRedCubeComponent
+    TheRedCubeComponent,
+    DifferentPrimitivesComponent,
+    SimpleProjectTemplateComponent
   ],
   imports: [
     BrowserModule,
