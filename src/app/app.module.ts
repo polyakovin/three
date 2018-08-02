@@ -14,6 +14,7 @@ import { HttpService } from './http.service';
 import { TheRedCubeComponent } from './the-red-cube/the-red-cube.component';
 import { DifferentPrimitivesComponent } from './different-primitives/different-primitives.component';
 import { SimpleProjectTemplateComponent } from './simple-project-template/simple-project-template.component';
+import { DragNDropComponent } from './drag-n-drop/drag-n-drop.component';
 
 mergeAllIconsToOneObject();
 
@@ -23,7 +24,8 @@ mergeAllIconsToOneObject();
     MainComponent,
     TheRedCubeComponent,
     DifferentPrimitivesComponent,
-    SimpleProjectTemplateComponent
+    SimpleProjectTemplateComponent,
+    DragNDropComponent
   ],
   imports: [
     BrowserModule,

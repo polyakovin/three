@@ -6,5 +6,9 @@
   {
     "name": "The Rotating Red Cube",
     "component": "the-red-cube"
+  },
+  {
+    "name": "Drag & Drop",
+    "component": "drag-n-drop"
   }
 ]
