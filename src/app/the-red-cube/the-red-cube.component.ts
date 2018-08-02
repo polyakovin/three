@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import * as THREE from 'three-full';
+import * as Stats from 'stats-js';
 
 @Component({
   selector: 'app-the-red-cube',
@@ -9,7 +10,7 @@ import * as THREE from 'three-full';
 export class TheRedCubeComponent implements OnInit {
   scene = new THREE.Scene();
   renderer = new THREE.WebGLRenderer();
-  // stats = new THREE.Stats();
+  stats = new Stats();
   camera;
   cube;
   i = 0;
@@ -43,6 +44,10 @@ export class TheRedCubeComponent implements OnInit {
     // статистика
     // this.stats.setMode(0);
     // document.getElementById("WebGL_output").appendChild(this.stats.domElement);
+    this.stats.domElement.style.position	= 'absolute';
+    this.stats.domElement.style.right	= '0';
+    this.stats.domElement.style.top	= '0';
+    document.getElementById("WebGL_output").appendChild(this.stats.domElement);
 
 
     var light = new THREE.AmbientLight(0xffffff);
@@ -59,7 +64,7 @@ export class TheRedCubeComponent implements OnInit {
 
     // тест анимации
     var cubeGeometry = new THREE.BoxGeometry(4, 4, 4);
-    var cubeMaterial = new THREE.MeshLambertMaterial({color: 0xff0000, ambient: 0xffffff});
+    var cubeMaterial = new THREE.MeshLambertMaterial({color: 0xff0000});
     this.cube = new THREE.Mesh(cubeGeometry, cubeMaterial);
     this.cube.position.x = 0;
     this.cube.position.y = 0;
@@ -82,6 +87,7 @@ export class TheRedCubeComponent implements OnInit {
     });
 
     this.renderer.render(this.scene, this.camera);
+    this.stats.update(this.renderer);
     // this.stats.update();
   }
 
