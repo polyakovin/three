@@ -4,7 +4,7 @@ import { SettingsService } from './settings.service';
 import { SceneService } from './scene.service';
 import { MathService } from './math.service';
 import { ModelsService } from './models.service';
-import Plotly from 'plotly.js-dist';
+import * as Plotly from 'plotly.js-dist';
 
 @Component({
   selector: 'app-magnitude-computer',
