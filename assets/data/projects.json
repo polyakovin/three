@@ -1,0 +1,10 @@
+[
+  {
+    "name": "Different Primitives",
+    "component": "different-primitives"
+  },
+  {
+    "name": "The Rotating Red Cube",
+    "component": "the-red-cube"
+  }
+]
